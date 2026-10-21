@@ -255,7 +255,7 @@ query_serving_endpoint <- function(client, name, dataframe_records = NULL, dataf
     extra_params = extra_params, input = input, inputs = inputs, instances = instances,
     max_tokens = max_tokens, messages = messages, n = n, prompt = prompt, stop = stop,
     stream = stream, temperature = temperature)
-  client$do("POST", paste("/serving-endpoints/", name, "/invocations", , sep = ""),
+  client$do("POST", paste("/serving-endpoints/", name, "/invocations", sep = ""),
     body = body)
 }
 
